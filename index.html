@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CMS 2030 · visão de futuro</title>
+<style>
+:root{color-scheme:light;
+ --bg:#FFFFFF;--bg2:#F5F7FA;--bg3:#EBEFF7;
+ --tx:#232831;--tx2:#626C80;--tx3:#4D5666;
+ --bd:#DDE2EB;--bd2:#ABB3C4;
+ --info-bg:#CCEAFF;--info-tx:#0F5384;
+ --ok-bg:#CCFFE6;--ok-tx:#0C7742;
+ --link:#0460A1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg2);color:var(--tx);
+ font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.6}
+.w{max-width:880px;margin:0 auto;padding:64px 24px 72px}
+h1{font-size:30px;font-weight:600;margin:0 0 6px;letter-spacing:-.015em}
+.sub{color:var(--tx2);font-size:14px;margin:0 0 40px;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-bottom:40px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--bg);
+ border:1px solid var(--bd);border-radius:12px;padding:24px;transition:border-color .12s,transform .12s}
+a.card:hover{border-color:var(--info-tx);transform:translateY(-1px)}
+a.card .ic{width:38px;height:38px;border-radius:9px;display:grid;place-items:center;font-size:17px;margin-bottom:14px}
+a.card h2{font-size:17px;font-weight:600;margin:0 0 5px}
+a.card p{font-size:13px;color:var(--tx2);margin:0 0 12px;line-height:1.55}
+a.card .go{font-size:13px;font-weight:500;color:var(--link)}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.tags span{font-size:11px;line-height:1.5;padding:2px 9px;border-radius:9999px;background:var(--bg2);color:var(--tx3)}
+h3{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--tx2);margin:0 0 12px;font-weight:600}
+ul.docs{list-style:none;padding:0;margin:0 0 40px;border:1px solid var(--bd);border-radius:12px;background:var(--bg);overflow:hidden}
+ul.docs li{border-bottom:1px solid var(--bd)}
+ul.docs li:last-child{border-bottom:none}
+ul.docs a{display:flex;align-items:center;gap:12px;padding:13px 18px;text-decoration:none;color:inherit}
+ul.docs a:hover{background:var(--bg2)}
+ul.docs .ext{font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--tx2);
+ border:1px solid var(--bd2);border-radius:4px;padding:2px 6px;flex-shrink:0}
+ul.docs b{font-weight:500;font-size:13.5px}
+ul.docs em{font-style:normal;color:var(--tx2);font-size:12.5px;display:block}
+.note{background:var(--info-bg);color:var(--info-tx);border-radius:10px;padding:16px 18px;font-size:13px;line-height:1.6}
+.note b{display:block;margin-bottom:4px}
+.foot{margin-top:36px;font-size:12px;color:var(--tx2)}
+</style>
+</head>
+<body>
+<div class="w">
+  <h1>CMS 2030</h1>
+  <p class="sub">Ambiente de trabalho da visão de futuro do CMS — o produto como ele é hoje, a camada de conceito, e o diagnóstico que sustenta as duas.</p>
+
+  <div class="grid">
+    <a class="card" href="prototipo.html">
+      <div class="ic" style="background:var(--ok-bg);color:var(--ok-tx)">▦</div>
+      <h2>Ambiente de simulação e criação</h2>
+      <p>O Backoffice navegável. O seletor no topo alterna entre o produto como ele é hoje e a camada de conceito.</p>
+      <div class="tags"><span>Atual</span><span>Conceito</span><span>tokens do Iris</span></div>
+      <span class="go">Abrir →</span>
+    </a>
+    <a class="card" href="painel.html">
+      <div class="ic" style="background:var(--info-bg);color:var(--info-tx)">◱</div>
+      <h2>Painel diagnóstico</h2>
+      <p>O que o produto é, onde está de maturidade, a assimetria entre conteúdo e item, e o dossiê do vínculo.</p>
+      <div class="tags"><span>Geral</span><span>Vínculo</span><span>Checkpoint 0</span></div>
+      <span class="go">Abrir →</span>
+    </a>
+  </div>
+
+  <h3>Slides</h3>
+  <ul class="docs">
+    <li><a href="slides/onde-o-vinculo-se-perde.svg">
+      <span class="ext">SVG</span><span><b>Onde o vínculo se perde</b>
+      <em>A perda não é entre as entidades, é no tempo — e o ponto da perda é o ponto da correção</em></span></a></li>
+  </ul>
+
+  <h3>Documentos</h3>
+  <ul class="docs">
+    <li><a href="documentos/relatorio-vinculo-conteudo-item.pdf">
+      <span class="ext">PDF</span><span><b>Vínculo conteúdo ↔ item</b>
+      <em>Relatório de investigação e recomendação de desenho · 13 páginas</em></span></a></li>
+    <li><a href="documentos/comparacao-atributos-documento-item.xlsx">
+      <span class="ext">XLSX</span><span><b>Comparação de atributos</b>
+      <em>Documento × item, campo a campo, com placar</em></span></a></li>
+    <li><a href="documentos/material-explicativo-backoffice-v2.md">
+      <span class="ext">MD</span><span><b>Material explicativo do BackOffice · v2</b>
+      <em>Setup de Escolas e CMS num documento só</em></span></a></li>
+  </ul>
+
+  <div class="note">
+    <b>Uma coisa não funciona fora do Cowork</b>
+    A seção “Em curso agora” do painel puxa os projetos do Linear ao vivo, e isso depende da ponte do Cowork. Aberta aqui, ela mostra um aviso e o resto do painel segue inteiro. Para ver o Linear ao vivo, use o painel pela lateral do Cowork.
+  </div>
+
+  <p class="foot">Tudo aqui abre por duplo clique, sem servidor. O <code>iniciar.command</code> é opcional: sobe um <code>localhost</code> e traz a versão mais recente do protótipo e do painel. Para compartilhar o protótipo como link, use o <code>publicar.command</code> — ele gera a cópia, confere se nada quebrou e abre o Finder e o serviço de hospedagem lado a lado. A pasta <b>outros</b> guarda scripts de construção e versões abandonadas — nada ali é necessário.</p>
+</div>
+</body>
+</html>
